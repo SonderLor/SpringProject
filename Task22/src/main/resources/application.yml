@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Task21
+    name: Task22
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
@@ -12,5 +12,7 @@ spring:
     host: smtp.yandex.com
     port: 465
     protocol: smtps
-    username: Sonder.Lor@yandex.ru
-    password: xxopfyssxrwggope
+    username: bokgosha@yandex.ru
+    password: qtxselgtcdgeljsm
+application:
+  persistent-dir: C:\Users\mrale\IdeaProjects\SpringProject\Task22\backUps

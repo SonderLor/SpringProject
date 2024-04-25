@@ -1,0 +1,308 @@
+13:05:06.434 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 8.0.1.Final
+13:05:06.475 [restartedMain] INFO  ru.sonder.task22.Task22Application
+                – Starting Task22Application using Java 21.0.2 with PID 8284 (C:\Users\mrale\IdeaProjects\SpringProject\Task22\build\classes\java\main started by mrale in C:\Users\mrale\IdeaProjects\SpringProject\Task22)
+13:05:06.476 [restartedMain] INFO  ru.sonder.task22.Task22Application
+                – No active profile set, falling back to 1 default profile: "default"
+13:05:06.520 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:05:06.520 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:05:07.470 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:05:07.516 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+13:05:08.151 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+13:05:08.195 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping
+                – Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+13:05:08.748 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+13:05:08.759 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+13:05:08.760 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+13:05:08.760 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.20]
+13:05:08.821 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+13:05:08.821 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2301 ms
+13:05:09.191 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+13:05:09.289 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+13:05:09.343 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+13:05:09.665 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+13:05:09.700 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+13:05:09.902 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b359804
+13:05:09.904 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+13:05:11.087 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:05:11.189 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:05:11.846 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:05:13.023 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+13:05:13.038 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+13:05:13.147 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+13:05:13.163 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+13:05:13.173 [restartedMain] INFO  ru.sonder.task22.Task22Application
+                – Started Task22Application in 7.125 seconds (process running for 8.327)
+13:05:13.446 [RMI TCP Connection(4)-172.27.144.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:05:13.446 [RMI TCP Connection(4)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+13:05:13.448 [RMI TCP Connection(4)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 2 ms
+13:05:34.723 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUsers method called with userDTOs: [UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[]), UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[]), UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[]), UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[]), UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[]), UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[]), UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[]), UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])]
+13:05:34.723 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[])
+13:05:34.764 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[])
+13:05:34.764 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[])
+13:05:34.765 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[])
+13:05:34.766 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[])
+13:05:34.767 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[])
+13:05:34.770 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[])
+13:05:34.771 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[])
+13:05:34.772 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[])
+13:05:34.772 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[])
+13:05:34.773 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[])
+13:05:34.773 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[])
+13:05:34.774 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[])
+13:05:34.774 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])
+13:05:34.775 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 52ms
+13:05:38.163 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+13:05:38.294 [http-nio-8080-exec-3] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 131ms
+13:05:40.813 [http-nio-8080-exec-10] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 4, creationDate=2024-04-15, userId=5)
+13:05:40.825 [http-nio-8080-exec-10] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 12ms
+13:05:45.144 [http-nio-8080-exec-5] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 5, creationDate=2024-04-15, userId=5)
+13:05:45.146 [http-nio-8080-exec-5] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 2ms
+13:05:50.295 [http-nio-8080-exec-6] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 6, creationDate=2024-04-15, userId=6)
+13:05:50.296 [http-nio-8080-exec-6] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 1ms
+13:06:37.181 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+13:06:37.184 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+13:06:37.187 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+13:12:36.993 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 8.0.1.Final
+13:12:37.047 [restartedMain] INFO  ru.sonder.task22.Task22Application
+                – Starting Task22Application using Java 21.0.2 with PID 15716 (C:\Users\mrale\IdeaProjects\SpringProject\Task22\build\classes\java\main started by mrale in C:\Users\mrale\IdeaProjects\SpringProject\Task22)
+13:12:37.048 [restartedMain] INFO  ru.sonder.task22.Task22Application
+                – No active profile set, falling back to 1 default profile: "default"
+13:12:37.102 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:12:37.102 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:12:37.963 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:12:38.013 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+13:12:38.794 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+13:12:38.843 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping
+                – Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+13:12:39.444 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+13:12:39.456 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+13:12:39.458 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+13:12:39.458 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.20]
+13:12:39.515 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+13:12:39.515 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2412 ms
+13:12:39.877 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+13:12:39.978 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+13:12:40.021 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+13:12:40.332 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+13:12:40.368 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+13:12:40.576 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@283e4a87
+13:12:40.578 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+13:12:41.782 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:12:41.898 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:12:42.636 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:12:43.923 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+13:12:43.932 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+13:12:44.011 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+13:12:44.035 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+13:12:44.048 [restartedMain] INFO  ru.sonder.task22.Task22Application
+                – Started Task22Application in 7.491 seconds (process running for 8.384)
+13:12:44.070 [scheduling-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+13:12:44.190 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 120ms
+13:12:44.196 [scheduling-1] INFO  r.s.t.s.i.PostServiceImplementation
+                – getAllPosts method called
+13:12:44.203 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 8ms
+13:12:44.204 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 145ms
+13:12:44.485 [RMI TCP Connection(6)-172.27.144.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:12:44.485 [RMI TCP Connection(6)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+13:12:44.487 [RMI TCP Connection(6)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 2 ms
+13:12:56.763 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUsers method called with userDTOs: [UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[]), UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[]), UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[]), UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[]), UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[]), UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[]), UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[]), UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])]
+13:12:56.763 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[])
+13:12:56.792 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[])
+13:12:56.793 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[])
+13:12:56.794 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[])
+13:12:56.795 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[])
+13:12:56.796 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[])
+13:12:56.798 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[])
+13:12:56.799 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[])
+13:12:56.800 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[])
+13:12:56.800 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[])
+13:12:56.801 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[])
+13:12:56.801 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[])
+13:12:56.802 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[])
+13:12:56.803 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])
+13:12:56.803 [http-nio-8080-exec-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 40ms
+13:13:00.149 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+13:13:00.171 [http-nio-8080-exec-3] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 22ms
+13:13:03.677 [http-nio-8080-exec-5] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 6, creationDate=2024-04-15, userId=6)
+13:13:03.693 [http-nio-8080-exec-5] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 16ms
+13:13:09.393 [http-nio-8080-exec-10] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст , creationDate=2024-04-15, userId=5)
+13:13:09.395 [http-nio-8080-exec-10] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 2ms
+13:13:14.221 [scheduling-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+13:13:14.233 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 12ms
+13:13:14.242 [scheduling-1] INFO  r.s.t.s.i.PostServiceImplementation
+                – getAllPosts method called
+13:13:14.246 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 4ms
+13:13:14.248 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 33ms
+13:13:15.405 [http-nio-8080-exec-6] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст х, creationDate=2024-04-15, userId=5)
+13:13:15.408 [http-nio-8080-exec-6] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 3ms
+13:13:27.846 [http-nio-8080-exec-7] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 00, creationDate=2024-04-15, userId=14)
+13:13:27.852 [http-nio-8080-exec-7] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 6ms
+13:13:31.589 [http-nio-8080-exec-8] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+13:13:31.601 [http-nio-8080-exec-8] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 12ms
+13:13:44.286 [scheduling-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+13:13:44.299 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 13ms
+13:13:44.309 [scheduling-1] INFO  r.s.t.s.i.PostServiceImplementation
+                – getAllPosts method called
+13:13:44.312 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 3ms
+13:13:44.316 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 55ms
+13:14:14.345 [scheduling-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+13:14:14.353 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 8ms
+13:14:14.362 [scheduling-1] INFO  r.s.t.s.i.PostServiceImplementation
+                – getAllPosts method called
+13:14:14.366 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 4ms
+13:14:14.368 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 46ms
+13:14:44.393 [scheduling-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+13:14:44.401 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 8ms
+13:14:44.411 [scheduling-1] INFO  r.s.t.s.i.PostServiceImplementation
+                – getAllPosts method called
+13:14:44.414 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 4ms
+13:14:44.417 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 33ms
+13:15:14.441 [scheduling-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+13:15:14.448 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 7ms
+13:15:14.459 [scheduling-1] INFO  r.s.t.s.i.PostServiceImplementation
+                – getAllPosts method called
+13:15:14.464 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 5ms
+13:15:14.467 [scheduling-1] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 37ms
+13:15:37.925 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+13:15:37.928 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+13:15:37.931 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
