@@ -1,0 +1,410 @@
+809  [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 8.0.1.Final
+875  [restartedMain] INFO  ru.sonder.task19.Task19Application
+                – Starting Task19Application using Java 21.0.2 with PID 11448 (C:\Users\mrale\IdeaProjects\SpringProject\Task19\build\classes\java\main started by mrale in C:\Users\mrale\IdeaProjects\SpringProject\Task19)
+875  [restartedMain] DEBUG ru.sonder.task19.Task19Application
+                – Running with Spring Boot v3.2.5, Spring v6.1.6
+876  [restartedMain] INFO  ru.sonder.task19.Task19Application
+                – No active profile set, falling back to 1 default profile: "default"
+932  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+932  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1878 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1931 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2677 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2723 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping
+                – Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+3329 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+3341 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3343 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3343 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.20]
+3404 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3404 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2471 ms
+3772 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3860 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+3905 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+4225 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+4270 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4465 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@649781aa
+4467 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+5737 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+5819 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6364 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+7653 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+7662 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+7751 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+7779 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+7801 [restartedMain] INFO  ru.sonder.task19.Task19Application
+                – Started Task19Application in 7.36 seconds (process running for 8.469)
+8116 [RMI TCP Connection(1)-172.27.144.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+8117 [RMI TCP Connection(1)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+8118 [RMI TCP Connection(1)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+72693 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+77437 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUsers method called with userDTOs: [UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[]), UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[]), UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[]), UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[]), UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[]), UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[]), UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[]), UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])]
+77437 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[])
+77464 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[])
+77465 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[])
+77466 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[])
+77467 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[])
+77467 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[])
+77469 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[])
+77470 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[])
+77471 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[])
+77471 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[])
+77472 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[])
+77472 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[])
+77473 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[])
+77474 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])
+105897 [http-nio-8080-exec-2] INFO  r.s.t.s.i.UserServiceImplementation
+                – getFilteredUsers method called with filteredBy: birthDate and value: 1998-09-15
+111647 [http-nio-8080-exec-5] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=George, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[])
+115631 [http-nio-8080-exec-6] INFO  r.s.t.s.i.UserServiceImplementation
+                – getFilteredUsers method called with filteredBy: birthDate and value: 1998-09-15
+135839 [http-nio-8080-exec-8] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 2, creationDate=2024-04-15, userId=5)
+139743 [http-nio-8080-exec-9] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 4, creationDate=2024-04-15, userId=5)
+144625 [http-nio-8080-exec-10] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+158476 [http-nio-8080-exec-4] INFO  r.s.t.s.i.PostServiceImplementation
+                – getAllPosts method called
+319519 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+319522 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+319525 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+11:22:54.490 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 8.0.1.Final
+11:22:54.525 [restartedMain] INFO  ru.sonder.task19.Task19Application
+                – Starting Task19Application using Java 21.0.2 with PID 720 (C:\Users\mrale\IdeaProjects\SpringProject\Task19\build\classes\java\main started by mrale in C:\Users\mrale\IdeaProjects\SpringProject\Task19)
+11:22:54.526 [restartedMain] DEBUG ru.sonder.task19.Task19Application
+                – Running with Spring Boot v3.2.5, Spring v6.1.6
+11:22:54.526 [restartedMain] INFO  ru.sonder.task19.Task19Application
+                – No active profile set, falling back to 1 default profile: "default"
+11:22:54.568 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:22:54.568 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:22:55.258 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:22:55.296 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+11:22:55.933 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+11:22:55.954 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping
+                – Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+11:22:56.468 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+11:22:56.484 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+11:22:56.485 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+11:22:56.485 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.20]
+11:22:56.534 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+11:22:56.534 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1966 ms
+11:22:56.862 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+11:22:56.925 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+11:22:56.960 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+11:22:57.216 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+11:22:57.243 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+11:22:57.408 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b27b5b4
+11:22:57.409 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+11:22:58.514 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:22:58.588 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:22:59.069 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:23:00.458 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+11:23:00.472 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+11:23:00.558 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+11:23:00.581 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+11:23:00.594 [restartedMain] INFO  ru.sonder.task19.Task19Application
+                – Started Task19Application in 6.458 seconds (process running for 7.326)
+11:23:00.882 [RMI TCP Connection(2)-172.27.144.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:23:00.882 [RMI TCP Connection(2)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+11:23:00.884 [RMI TCP Connection(2)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+11:23:13.424 [http-nio-8080-exec-2] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+11:23:18.206 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUsers method called with userDTOs: [UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[]), UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[]), UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[]), UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[]), UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[]), UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[]), UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[]), UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])]
+11:23:18.206 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[])
+11:23:18.233 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[])
+11:23:18.234 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[])
+11:23:18.236 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[])
+11:23:18.237 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[])
+11:23:18.238 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[])
+11:23:18.239 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[])
+11:23:18.240 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[])
+11:23:18.240 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[])
+11:23:18.241 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[])
+11:23:18.242 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[])
+11:23:18.243 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[])
+11:23:18.243 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[])
+11:23:18.244 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])
+11:23:21.372 [http-nio-8080-exec-9] INFO  r.s.t.s.i.UserServiceImplementation
+                – deleteUsers method called
+11:23:25.467 [http-nio-8080-exec-10] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+11:23:47.548 [http-nio-8080-exec-6] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 4, creationDate=2024-04-15, userId=5)
+11:23:47.562 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]
+                – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at ru.sonder.task19.services.implementations.PostServiceImplementation.saveOrUpdatePost(PostServiceImplementation.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at ru.sonder.task19.services.implementations.PostServiceImplementation$$SpringCGLIB$$0.saveOrUpdatePost(<generated>)
+	at ru.sonder.task19.controllers.PostController.createPost(PostController.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11:24:02.452 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUsers method called with userDTOs: [UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[]), UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[]), UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[]), UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[]), UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[]), UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[]), UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[]), UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])]
+11:24:02.453 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[])
+11:24:02.454 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[])
+11:24:02.454 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[])
+11:24:02.455 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[])
+11:24:02.455 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[])
+11:24:02.456 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[])
+11:24:02.456 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[])
+11:24:02.457 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[])
+11:24:02.457 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[])
+11:24:02.458 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[])
+11:24:02.459 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[])
+11:24:02.459 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[])
+11:24:02.460 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[])
+11:24:02.460 [http-nio-8080-exec-7] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])
+11:24:09.259 [http-nio-8080-exec-8] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 4, creationDate=2024-04-15, userId=5)
+11:24:09.262 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]
+                – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at ru.sonder.task19.services.implementations.PostServiceImplementation.saveOrUpdatePost(PostServiceImplementation.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at ru.sonder.task19.services.implementations.PostServiceImplementation$$SpringCGLIB$$0.saveOrUpdatePost(<generated>)
+	at ru.sonder.task19.controllers.PostController.createPost(PostController.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11:24:14.285 [http-nio-8080-exec-1] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+11:24:28.013 [http-nio-8080-exec-2] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 4, creationDate=2024-04-15, userId=26)
+11:25:12.406 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+11:25:12.409 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+11:25:12.411 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
