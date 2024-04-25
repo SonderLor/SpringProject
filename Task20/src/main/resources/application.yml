@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Task20
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 231514
+  jpa:
+    hibernate:
+      ddl-auto: create
