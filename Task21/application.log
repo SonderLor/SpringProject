@@ -1,0 +1,586 @@
+12:06:10.993 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 8.0.1.Final
+12:06:11.069 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Starting Task21Application using Java 21.0.2 with PID 5208 (C:\Users\mrale\IdeaProjects\SpringProject\Task21\build\classes\java\main started by mrale in C:\Users\mrale\IdeaProjects\SpringProject\Task21)
+12:06:11.070 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+12:06:11.138 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:06:11.138 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:06:12.115 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:06:12.165 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+12:06:14.362 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+12:06:14.400 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping
+                – Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+12:06:15.006 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+12:06:15.018 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+12:06:15.020 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+12:06:15.020 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.20]
+12:06:15.078 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+12:06:15.079 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 3941 ms
+12:06:15.431 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+12:06:15.521 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+12:06:15.569 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+12:06:15.871 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+12:06:15.909 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+12:06:16.099 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1568689e
+12:06:16.100 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+12:06:17.341 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:06:17.437 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:06:17.994 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:06:19.300 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+12:06:19.309 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+12:06:19.376 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+12:06:19.391 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+12:06:19.401 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Started Task21Application in 8.843 seconds (process running for 10.098)
+12:06:19.708 [RMI TCP Connection(2)-172.27.144.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:06:19.709 [RMI TCP Connection(2)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+12:06:19.710 [RMI TCP Connection(2)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+12:06:20.475 [RMI TCP Connection(1)-172.27.144.1] WARN  o.s.b.a.mail.MailHealthIndicator
+                – Mail health check failed
+jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials b28-20020a0565120b9c00b00519758673cfsm2680436lfv.12 - gsmtp
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:360)
+	at org.springframework.boot.actuate.mail.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:52)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+12:08:30.967 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener
+                – Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+12:08:30.975 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Stopping ProtocolHandler ["http-nio-8080"]
+12:08:30.985 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+12:08:30.990 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+12:08:30.994 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+12:08:31.158 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Starting Task21Application using Java 21.0.2 with PID 5208 (C:\Users\mrale\IdeaProjects\SpringProject\Task21\build\classes\java\main started by mrale in C:\Users\mrale\IdeaProjects\SpringProject\Task21)
+12:08:31.159 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+12:08:31.534 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:08:31.541 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+12:08:31.749 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+12:08:31.752 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping
+                – Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+12:08:31.864 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+12:08:31.866 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+12:08:31.867 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+12:08:31.867 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.20]
+12:08:31.890 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+12:08:31.890 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 728 ms
+12:08:32.056 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+12:08:32.061 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+12:08:32.068 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+12:08:32.070 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-2 - Starting...
+12:08:32.129 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2bebc32e
+12:08:32.129 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-2 - Start completed.
+12:08:32.201 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:08:32.253 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:08:32.445 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:08:33.143 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+12:08:33.150 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+12:08:33.179 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+12:08:33.181 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+12:08:33.187 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Started Task21Application in 2.095 seconds (process running for 143.884)
+12:08:33.189 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener
+                – Condition evaluation unchanged
+12:09:07.576 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+12:09:07.577 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-2 - Shutdown initiated...
+12:09:07.579 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-2 - Shutdown completed.
+12:09:10.563 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 8.0.1.Final
+12:09:10.604 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Starting Task21Application using Java 21.0.2 with PID 12008 (C:\Users\mrale\IdeaProjects\SpringProject\Task21\build\classes\java\main started by mrale in C:\Users\mrale\IdeaProjects\SpringProject\Task21)
+12:09:10.605 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+12:09:10.649 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:09:10.649 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:09:11.449 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:09:11.497 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+12:09:12.157 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+12:09:12.196 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping
+                – Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+12:09:12.758 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+12:09:12.769 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+12:09:12.771 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+12:09:12.771 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.20]
+12:09:12.825 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+12:09:12.826 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2176 ms
+12:09:13.173 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+12:09:13.258 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+12:09:13.300 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+12:09:13.593 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+12:09:13.631 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+12:09:13.941 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4c89c2cb
+12:09:13.942 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+12:09:15.107 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:09:15.184 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:09:15.747 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:09:17.044 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+12:09:17.055 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+12:09:17.119 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+12:09:17.138 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+12:09:17.148 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Started Task21Application in 6.959 seconds (process running for 7.903)
+12:09:17.463 [RMI TCP Connection(2)-172.27.144.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:09:17.463 [RMI TCP Connection(2)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+12:09:17.465 [RMI TCP Connection(2)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 2 ms
+12:09:17.991 [RMI TCP Connection(1)-172.27.144.1] WARN  o.s.b.a.mail.MailHealthIndicator
+                – Mail health check failed
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Error: authentication failed: Invalid user or password! 1714036159-J9I0c1jOfCg0
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:360)
+	at org.springframework.boot.actuate.mail.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:52)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+12:11:58.802 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+12:11:58.805 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+12:11:58.807 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+12:12:01.400 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 8.0.1.Final
+12:12:01.439 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Starting Task21Application using Java 21.0.2 with PID 7052 (C:\Users\mrale\IdeaProjects\SpringProject\Task21\build\classes\java\main started by mrale in C:\Users\mrale\IdeaProjects\SpringProject\Task21)
+12:12:01.440 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+12:12:01.485 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:12:01.485 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:12:02.184 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:12:02.227 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+12:12:02.873 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+12:12:02.895 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping
+                – Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+12:12:03.421 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+12:12:03.431 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+12:12:03.433 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+12:12:03.433 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.20]
+12:12:03.480 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+12:12:03.481 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1995 ms
+12:12:03.801 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+12:12:03.865 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+12:12:03.900 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+12:12:04.148 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+12:12:04.173 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+12:12:04.336 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a8beda8
+12:12:04.337 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+12:12:05.395 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:12:05.469 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:12:05.975 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:12:07.181 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+12:12:07.189 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+12:12:07.249 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+12:12:07.263 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+12:12:07.274 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Started Task21Application in 6.222 seconds (process running for 7.058)
+12:12:07.515 [RMI TCP Connection(3)-172.27.144.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:12:07.515 [RMI TCP Connection(3)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+12:12:07.517 [RMI TCP Connection(3)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+12:12:07.961 [RMI TCP Connection(2)-172.27.144.1] WARN  o.s.b.a.mail.MailHealthIndicator
+                – Mail health check failed
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Error: authentication failed: Invalid user or password! 1714036329-9CI9Z3Vn7W20
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:360)
+	at org.springframework.boot.actuate.mail.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:52)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+12:13:00.962 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+12:13:00.965 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+12:13:00.969 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+12:13:03.875 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 8.0.1.Final
+12:13:03.916 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Starting Task21Application using Java 21.0.2 with PID 2220 (C:\Users\mrale\IdeaProjects\SpringProject\Task21\build\classes\java\main started by mrale in C:\Users\mrale\IdeaProjects\SpringProject\Task21)
+12:13:03.917 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – No active profile set, falling back to 1 default profile: "default"
+12:13:03.964 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:13:03.964 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:13:04.751 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:13:04.801 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+12:13:05.577 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+12:13:05.598 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping
+                – Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+12:13:06.200 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+12:13:06.210 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+12:13:06.212 [restartedMain] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+12:13:06.212 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.20]
+12:13:06.265 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+12:13:06.266 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2300 ms
+12:13:06.611 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+12:13:06.673 [restartedMain] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+12:13:06.709 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+12:13:06.992 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+12:13:07.029 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+12:13:07.321 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1497347c
+12:13:07.323 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+12:13:08.460 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:13:08.531 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:13:09.066 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:13:10.373 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                – LiveReload server is running on port 35729
+12:13:10.381 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+12:13:10.452 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+12:13:10.469 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+12:13:10.480 [restartedMain] INFO  ru.sonder.task21.Task21Application
+                – Started Task21Application in 7.024 seconds (process running for 7.903)
+12:13:10.937 [RMI TCP Connection(3)-172.27.144.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:13:10.937 [RMI TCP Connection(3)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+12:13:10.939 [RMI TCP Connection(3)-172.27.144.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 2 ms
+12:14:58.655 [http-nio-8080-exec-3] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+12:14:58.783 [http-nio-8080-exec-3] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 128ms
+12:15:03.389 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUsers method called with userDTOs: [UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[]), UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[]), UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[]), UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[]), UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[]), UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[]), UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[]), UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[]), UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[]), UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[]), UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])]
+12:15:03.391 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Konstantinov, birthDate=2005-02-08, posts=[])
+12:15:03.856 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 432ms
+12:15:03.859 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Sergeevich, lastName=Petrov, birthDate=1998-09-15, posts=[])
+12:15:04.407 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 545ms
+12:15:04.408 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Vladimirovna, lastName=Sokolova, birthDate=1987-04-23, posts=[])
+12:15:04.941 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 531ms
+12:15:04.941 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Andreevich, lastName=Smirnov, birthDate=1976-11-30, posts=[])
+12:15:05.492 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 550ms
+12:15:05.493 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Anna, middleName=Olegovna, lastName=Kuznetsova, birthDate=1992-06-12, posts=[])
+12:15:05.880 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 385ms
+12:15:05.880 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Svetlana, middleName=Mikhailovna, lastName=Ivanova, birthDate=2000-03-19, posts=[])
+12:15:06.362 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 471ms
+12:15:06.362 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Mikhail, middleName=Nikolaevich, lastName=Fedorov, birthDate=1983-08-27, posts=[])
+12:15:07.035 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 670ms
+12:15:07.035 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Olga, middleName=Sergeevna, lastName=Morozova, birthDate=1979-01-05, posts=[])
+12:15:07.634 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 596ms
+12:15:07.635 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Pavel, middleName=Dmitrievich, lastName=Karpov, birthDate=1995-10-20, posts=[])
+12:15:08.152 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 515ms
+12:15:08.153 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Natalia, middleName=Ivanovna, lastName=Volkova, birthDate=2008-07-10, posts=[])
+12:15:08.478 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 321ms
+12:15:08.478 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Aleksei, middleName=Pavlovich, lastName=Ivanov, birthDate=2001-12-03, posts=[])
+12:15:09.265 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 785ms
+12:15:09.265 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Ivan, middleName=Andreevich, lastName=Smirnov, birthDate=1990-05-25, posts=[])
+12:15:09.581 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 314ms
+12:15:09.581 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Elena, middleName=Mikhailovna, lastName=Kuznetsova, birthDate=1988-09-08, posts=[])
+12:15:10.097 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 514ms
+12:15:10.098 [http-nio-8080-exec-4] INFO  r.s.t.s.i.UserServiceImplementation
+                – saveOrUpdateUser method called with userDTO: UserDTO(id=null, firstName=Dmitri, middleName=Vladimirovich, lastName=Sokolov, birthDate=1977-02-17, posts=[])
+12:15:10.656 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 554ms
+12:15:10.657 [http-nio-8080-exec-4] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 7268ms
+12:15:49.770 [http-nio-8080-exec-2] INFO  r.s.t.s.i.UserServiceImplementation
+                – getAllUsers method called
+12:15:49.799 [http-nio-8080-exec-2] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 29ms
+12:15:55.820 [http-nio-8080-exec-5] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 3, creationDate=2024-04-15, userId=5)
+12:15:56.217 [http-nio-8080-exec-5] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 383ms
+12:15:56.217 [http-nio-8080-exec-5] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 397ms
+12:16:00.334 [http-nio-8080-exec-6] INFO  r.s.t.s.i.PostServiceImplementation
+                – saveOrUpdatePost method called with postDTO: PostDTO(id=null, text=Текст 4, creationDate=2024-04-15, userId=5)
+12:16:00.912 [http-nio-8080-exec-6] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 576ms
+12:16:00.912 [http-nio-8080-exec-6] INFO  r.s.t.aspects.TimeLoggingAspect
+                – Method execution time: 578ms
+12:21:00.808 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+12:21:00.813 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+12:21:00.816 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
