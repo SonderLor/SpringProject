@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 @ManagedResource
 @RequiredArgsConstructor
 public class ShedulerServiceImplementation implements ShedulerService {
-    private final UserService userService;
+    private final PersonService personService;
     private final PostService postService;
     private final ObjectMapper mapper;
 
@@ -38,16 +38,16 @@ public class ShedulerServiceImplementation implements ShedulerService {
             FileUtils.deleteDirectory(dir);
         }
         dir.mkdirs();
-        new File(dir, "users").mkdir();
+        new File(dir, "persons").mkdir();
         new File(dir, "posts").mkdir();
         saveAllEntities(dir);
     }
 
     private void saveAllEntities(File dir) {
-        userService.getAllUsers().forEach(
+        personService.getAllPersons().forEach(
                 user -> {
                     try {
-                        Files.write(dir.toPath().resolve("users").resolve(user.getId() + ".json"),
+                        Files.write(dir.toPath().resolve("persons").resolve(user.getId() + ".json"),
                                 mapper.writeValueAsBytes(user)
                         );
                     } catch (IOException e) {

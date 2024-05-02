@@ -2,14 +2,17 @@ package ru.sonder.task22.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import ru.sonder.task22.DTOs.PostDTO;
 
 import java.time.LocalDate;
 
 @Data
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "posts")
 public class Post {
@@ -26,24 +29,24 @@ public class Post {
 
     @JsonIgnore
     @ManyToOne
-    private User user;
+    private Person person;
 
-    public void setUser(User user) {
-        if (this.user != null) {
-            this.user.getPosts().remove(this);
+    public void setPerson(Person person) {
+        if (this.person != null) {
+            this.person.getPosts().remove(this);
         }
-        user.getPosts().add(this);
-        this.user = user;
+        person.getPosts().add(this);
+        this.person = person;
     }
 
     public void removeUser() {
-        if (this.user != null) {
-            this.user.getPosts().remove(this);
+        if (this.person != null) {
+            this.person.getPosts().remove(this);
         }
-        this.user = null;
+        this.person = null;
     }
 
     public PostDTO toDto() {
-        return new PostDTO(id, text, creationDate, user == null ? null : user.getId());
+        return new PostDTO(id, text, creationDate, person == null ? null : person.getId());
     }
 }

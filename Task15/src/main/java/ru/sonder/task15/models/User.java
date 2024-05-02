@@ -7,7 +7,7 @@ import java.time.LocalDate;
 @Data
 @RequiredArgsConstructor
 @Entity
-@Table(name = "task15-users")
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

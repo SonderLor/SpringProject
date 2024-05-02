@@ -1,40 +1,25 @@
 package ru.sonder.task22.models;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
-import ru.sonder.task22.DTOs.UserDTO;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-
-@Data
-@RequiredArgsConstructor
 @Entity
 @Table(name = "users")
+@Getter
+@Setter
+@NoArgsConstructor
 public class User {
     @Id
-    @SequenceGenerator(name = "users_seq", sequenceName = "users_sequence", allocationSize = 1)
-    @GeneratedValue(generator = "users_seq", strategy = GenerationType.SEQUENCE)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    long id;
 
-    @Column(name = "first_name")
-    private String firstName;
+    private String username;
+    private String password;
 
-    @Column(name = "last_name")
-    private String lastName;
-
-    @Column(name = "middle_name")
-    private String middleName;
-
-    @Column(name = "birth_date")
-    private LocalDate birthDate;
-
-    @OneToMany(mappedBy = "user")
-    private List<Post> posts = new ArrayList<>();
-
-    public UserDTO toDto() {
-        return new UserDTO(id, firstName, lastName, middleName, birthDate, posts.stream().map(Post::toDto).toList());
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 }

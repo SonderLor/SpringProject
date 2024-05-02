@@ -1,14 +1,10 @@
 package ru.sonder.task22.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 import ru.sonder.task22.models.User;
 
-import java.time.LocalDate;
-import java.util.List;
-
+@Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    List<User> findUsersByFirstNameEquals(String firstName);
-    List<User> findUserByLastNameEquals(String lastName);
-    List<User> findUserByMiddleNameEquals(String middleName);
-    List<User> findUserByBirthDateEquals(LocalDate birthDate);
+    User getByUsername(String username);
 }

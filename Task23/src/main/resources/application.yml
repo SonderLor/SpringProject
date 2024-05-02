@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Task23
+  session:
+    jdbc:
+      schema: classpath:org/springframework/session/jdbc/schema-postgresql.sql
+      initialize-schema: always
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 231514
+  jpa:
+    hibernate:
+      ddl-auto: create
+  mail:
+    host: smtp.yandex.com
+    port: 465
+    protocol: smtps
+    username: Sonder.Lor@yandex.ru
+    password: lsxzeuuxqlvkgxqk
+application:
+  persistent-dir: C:\Users\mrale\IdeaProjects\SpringProject\Task22\backUps

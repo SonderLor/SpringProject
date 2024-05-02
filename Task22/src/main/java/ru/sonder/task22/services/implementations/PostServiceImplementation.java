@@ -5,10 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.sonder.task22.DTOs.PostDTO;
+import ru.sonder.task22.models.Person;
 import ru.sonder.task22.models.Post;
-import ru.sonder.task22.models.User;
 import ru.sonder.task22.repositories.PostRepository;
-import ru.sonder.task22.repositories.UserRepository;
+import ru.sonder.task22.repositories.PersonRepository;
 import ru.sonder.task22.services.EmailService;
 import ru.sonder.task22.services.PostService;
 
@@ -21,7 +21,7 @@ import java.util.List;
 @Slf4j
 public class PostServiceImplementation implements PostService {
     private final PostRepository postRepository;
-    private final UserRepository userRepository;
+    private final PersonRepository personRepository;
     private final EmailService emailService;
 
     public List<PostDTO> getAllPosts() {
@@ -39,9 +39,9 @@ public class PostServiceImplementation implements PostService {
         Post post = new Post();
         post.setText(postDTO.getText());
         post.setCreationDate(postDTO.getCreationDate());
-        User user = userRepository.findById(postDTO.getUserId()).orElseThrow();
-        post.setUser(user);
-        user.getPosts().add(post);
+        Person person = personRepository.findById(postDTO.getUserId()).orElseThrow();
+        post.setPerson(person);
+        person.getPosts().add(post);
         postRepository.save(post);
         String subject = "New Post Added";
         String text = "Text: " + post.getText() + "\nCreation Date: " + post.getCreationDate();
@@ -57,9 +57,9 @@ public class PostServiceImplementation implements PostService {
     public List<PostDTO> getFilteredPosts(String filteredBy, String value) {
         log.info("getFilteredPosts method called with filteredBy: {} and value: {}", filteredBy, value);
         var entities = switch (filteredBy) {
-            case "text" -> postRepository.findPostByTextEquals(value);
-            case "creationDate" -> postRepository.findUserByCreationDateEquals(LocalDate.parse(value));
-            case "userId" -> postRepository.findUserByUserEquals(userRepository.findById(Long.valueOf(value)).orElseThrow());
+            case "text" -> postRepository.findPostByTextContains(value);
+            case "creationDate" -> postRepository.findPostByCreationDateEquals(LocalDate.parse(value));
+            case "userId" -> postRepository.findPostByPersonEquals(personRepository.findById(Long.valueOf(value)).orElseThrow());
             default -> throw new IllegalStateException("Unexpected value: " + filteredBy);
         };
         return entities.stream().map(Post::toDto).toList();
